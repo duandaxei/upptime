@@ -1,7 +1,7 @@
 # Change these first
 owner: duandaxei # Your GitHub organization or username, where this repository lives
 repo: upptime # The name of this repository
-
+user-agent: $OWNER-$REPO
 sites:
   - name: RustDesk Public Rendezvous Server
     check: "tcp-ping"
@@ -43,6 +43,7 @@ status-website:
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
+  robotsText: "User-agent: * \n Disallow: /"
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
