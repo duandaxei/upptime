@@ -3,31 +3,22 @@ owner: duandaxei # Your GitHub organization or username, where this repository l
 repo: upptime # The name of this repository
 user-agent: $OWNER-$REPO
 sites:
-  - name: RustDesk Public Rendezvous Server
-    check: "tcp-ping"
-    url: rs-ny.rustdesk.com
-    port: 21116
-  - name: RustDesk Public Relay Server - 0
+  - name: Public Relay Server - 0
     check: "tcp-ping"
     url: $SERVER0
     port: $PORT0
-  - name: RustDesk Public Relay Server - 1
+  - name: Public Relay Server - 1
     check: "tcp-ping"
     url: $SERVER1
     port: $PORT1
-  - name: RustDesk Public Relay Server - 2
+  - name: Public Relay Server - 2
     check: "tcp-ping"
     url: $SERVER2
     port: $PORT2
-  - name: RustDesk Public Relay Server - 3
+  - name: Public Relay Server - 3
     check: "tcp-ping"
     url: $SERVER3
     port: PORT3
-  #- name: IPv6 test
-  #  url: forwardemail.net
-  #  port: 80
-  #  check: "tcp-ping"
-  #  ipv6: true
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
